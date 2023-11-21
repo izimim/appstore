@@ -24,7 +24,7 @@ additionalProperties:
               value: mysql
             - label: MariaDB
               value: mariadb
-        - default: umami
+        - default: db-umami
           envKey: PANEL_DB_NAME
           labelEn: Database
           labelZh: 数据库名

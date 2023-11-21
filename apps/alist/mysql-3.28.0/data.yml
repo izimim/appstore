@@ -24,21 +24,21 @@ additionalProperties:
               value: mysql
             - label: MariaDB
               value: mariadb
-        - default: umami
+        - default: db-alist
           envKey: PANEL_DB_NAME
           labelEn: Database
           labelZh: 数据库名
           required: true
           rule: paramCommon
           type: text
-        - default: umami
+        - default: alist
           envKey: PANEL_DB_USER
           labelEn: User
           labelZh: 数据库用户
           required: true
           rule: paramCommon
           type: text
-        - default: umami
+        - default: alist
           envKey: PANEL_DB_USER_PASSWORD
           labelEn: Password
           labelZh: 数据库用户密码
