@@ -1,0 +1,20 @@
+name: Caddy
+tags:
+    - 实用工具
+title: 一款现代化的HTTP/HTTPS服务器
+type: 实用工具
+description: 一款现代化的HTTP/HTTPS服务器
+additionalProperties:
+    key: caddy
+    name: Caddy
+    tags:
+        - Tool
+    shortDescZh: 一款现代化的HTTP/HTTPS服务器
+    shortDescEn: A modern HTTP/HTTPS server
+    type: tool
+    crossVersionUpdate: false
+    limit: 0
+    recommend: 0
+    website: https://caddyserver.com
+    github: https://github.com/caddyserver/caddy
+    document: https://caddyserver.com/docs

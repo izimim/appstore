@@ -1,0 +1,16 @@
+version: '3'
+services:
+  caddy:
+    container_name: ${CONTAINER_NAME}
+    network_mode: host
+    restart: always
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./data/Caddyfile:/etc/caddy/Caddyfile
+      - ./data/config:/config/caddy
+      - ./data/data:/data/caddy
+      - ./data/site:/srv
+    image: caddy:2.7
+    labels:
+      createdBy: "Apps"
