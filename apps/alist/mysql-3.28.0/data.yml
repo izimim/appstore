@@ -1,0 +1,47 @@
+additionalProperties:
+    formFields:
+        - default: 5244
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+          edit: true
+        - child:
+            default: ""
+            envKey: PANEL_DB_HOST
+            required: true
+            type: service
+          default: mysql
+          envKey: PANEL_DB_TYPE
+          labelEn: Database Service
+          labelZh: 数据库服务
+          required: true
+          type: apps
+          values:
+            - label: MySQL
+              value: mysql
+            - label: MariaDB
+              value: mariadb
+        - default: umami
+          envKey: PANEL_DB_NAME
+          labelEn: Database
+          labelZh: 数据库名
+          required: true
+          rule: paramCommon
+          type: text
+        - default: umami
+          envKey: PANEL_DB_USER
+          labelEn: User
+          labelZh: 数据库用户
+          required: true
+          rule: paramCommon
+          type: text
+        - default: umami
+          envKey: PANEL_DB_USER_PASSWORD
+          labelEn: Password
+          labelZh: 数据库用户密码
+          required: true
+          random: true
+          type: text
