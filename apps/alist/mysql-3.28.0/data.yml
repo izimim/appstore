@@ -46,7 +46,7 @@ additionalProperties:
           random: true
           type: text
         - default: https://unpkg.com/alist-web@3.28.0/dist
-          envKey: CND
+          envKey: CDN
           labelEn: CDN URL
           labelZh: CDN地址
           rule: paramExtUrl
