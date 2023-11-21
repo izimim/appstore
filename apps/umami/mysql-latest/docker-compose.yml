@@ -1,0 +1,20 @@
+version: '3'
+services:
+  umami:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3000
+    environment:
+      - APP_SECRET=${APP_SECRET}
+      - DATABASE_URL=${PANEL_DB_TYPE}://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@${PANEL_DB_HOST}:${PANEL_DB_PORT}/${PANEL_DB_NAME}
+      - TRACKER_SCRIPT_NAME=random-string.js
+      - DATABASE_TYPE=mysql
+    image: ghcr.io/umami-software/umami:mysql-latest
+    labels:
+      createdBy: "Apps"
+networks:  
+  1panel-network:
+    external: true

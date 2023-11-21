@@ -1,0 +1,18 @@
+additionalProperties:
+    formFields:
+        - default: 8360
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+          edit: true
+        - default: waline
+          envKey: JWT_TOKEN
+          labelEn: JWT secret
+          labelZh: JWT密钥
+          required: true
+          random: true
+          edit: true
+          type: text

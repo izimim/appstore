@@ -1,0 +1,25 @@
+additionalProperties:
+    formFields:
+        - default: 3000
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+          edit: true
+        - default: 
+          envKey: DATABASE_URL
+          labelEn: Database url
+          labelZh: 数据库地址
+          required: true
+          edit: true
+          type: text
+        - default: umami
+          envKey: APP_SECRET
+          labelEn: APP secret
+          labelZh: APP密钥
+          required: true
+          random: true
+          edit: true
+          type: text

@@ -1,0 +1,35 @@
+version: '3'
+services:
+  aria2-pro:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${RPC_PORT}:6800
+      - ${LISTEN_PORT}:6888
+      - ${LISTEN_PORT}:6888/udp
+    environment:
+      - PUID=0
+      - PGID=0
+      - UMASK=022
+      - DISK_CACHE=64M
+      - TZ=Asia/Shanghai
+      - SPECIAL_MODE=rclone
+      - RPC_SECRET=${TOKEN}
+      - CUSTOM_TRACKER_URL=${TRACKER_URL}
+    volumes:
+      - ./data:/config
+      - downloads:/downloads
+    logging:
+      driver: json-file
+      options:
+        max-size: 1m
+    image: p3terx/aria2-pro:latest
+    labels:
+      createdBy: "Apps"
+networks:  
+  1panel-network:
+    external: true
+volumes:
+  downloads: {}

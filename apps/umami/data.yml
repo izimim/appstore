@@ -1,0 +1,20 @@
+name: Umami
+tags:
+    - 工具
+title: 网络分析不应该很复杂
+type: 工具
+description: 网络分析不应该很复杂
+additionalProperties:
+    key: umami
+    name: Umami
+    tags:
+        - Tool
+    shortDescZh: 网络分析不应该很复杂
+    shortDescEn: Web analytics shouldn't be complicated.
+    type: tool
+    crossVersionUpdate: false
+    limit: 0
+    recommend: 0
+    website: https://umami.is
+    github: https://github.com/umami-software/umami
+    document: https://umami.is/docs

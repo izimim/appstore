@@ -1,0 +1,34 @@
+additionalProperties:
+    formFields:
+        - default: 6800
+          envKey: RPC_PORT
+          labelEn: RPC port
+          labelZh: RPC端口
+          required: true
+          rule: paramPort
+          type: number
+          edit: true
+        - default: 6888
+          envKey: LISTEN_PORT
+          labelEn: BitTorrent/DHT listen port
+          labelZh: BitTorrent/DHT监听端口
+          required: true
+          rule: paramPort
+          type: number
+          edit: true
+        - default: aria2
+          envKey: TOKEN
+          labelEn: RPC secret
+          labelZh: RPC密钥
+          required: true
+          random: true
+          edit: true
+          type: text
+        - default: https://gitea.com/XIU2/TrackersListCollection/raw/branch/master/all_aria2.txt
+          edit: true
+          envKey: TRACKER_URL
+          labelEn: Tracker url
+          labelZh: Tracker链接
+          required: true
+          rule: paramExtUrl
+          type: text

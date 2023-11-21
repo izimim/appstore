@@ -1,0 +1,18 @@
+additionalProperties:
+    formFields:
+        - default: 5050
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+          edit: true
+        - default: flexget
+          envKey: WEB_PASSWORD
+          labelEn: WebUI Password
+          labelZh: 网页密码
+          required: true
+          random: true
+          edit: true
+          type: text

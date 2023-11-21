@@ -13,7 +13,7 @@ additionalProperties:
     shortDescEn: A modern HTTP/HTTPS server
     type: tool
     crossVersionUpdate: false
-    limit: 0
+    limit: 1
     recommend: 0
     website: https://caddyserver.com
     github: https://github.com/caddyserver/caddy
