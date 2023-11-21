@@ -20,6 +20,7 @@ services:
       - DB_NAME=${PANEL_DB_NAME}
       - DB_USER=${PANEL_DB_USER}
       - DB_PASS=${PANEL_DB_USER_PASSWORD}
+      - CDN=${CDN}
     image: xhofe/alist:v3.28.0
     labels:
       createdBy: "Apps"

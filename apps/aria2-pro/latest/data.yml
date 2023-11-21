@@ -25,10 +25,10 @@ additionalProperties:
           edit: true
           type: text
         - default: https://gitea.com/XIU2/TrackersListCollection/raw/branch/master/all_aria2.txt
-          edit: true
           envKey: TRACKER_URL
           labelEn: Tracker url
           labelZh: Tracker链接
           required: true
           rule: paramExtUrl
           type: text
+          edit: true
