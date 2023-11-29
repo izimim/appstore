@@ -45,7 +45,7 @@ additionalProperties:
           required: true
           random: true
           type: text
-        - default: 
+        - default: ""
           envKey: CDN
           labelEn: CDN URL
           labelZh: CDN地址
