@@ -2,9 +2,9 @@
 # 账号密码
 
 ```sh
-# Randomly generate a password
+# 随机生成一个密码
 docker exec -it alist ./alist admin random
-# Manually set a password, `NEW_PASSWORD` refers to the password you need to set
+# 手动设置一个密码,`NEW_PASSWORD`是指你需要设置的密码
 docker exec -it alist ./alist admin set NEW_PASSWORD
 ```
 
