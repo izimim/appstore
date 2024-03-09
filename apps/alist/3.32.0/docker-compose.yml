@@ -21,7 +21,7 @@ services:
       - DB_USER=${PANEL_DB_USER}
       - DB_PASS=${PANEL_DB_USER_PASSWORD}
       - CDN=${CDN}
-    image: xhofe/alist:v3.30.0
+    image: xhofe/alist:v3.32.0
     labels:
       createdBy: "Apps"
 networks:
