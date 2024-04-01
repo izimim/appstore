@@ -5,5 +5,4 @@ additionalProperties:
           labelEn: Caddyfile path
           labelZh: Caddyfile 路径
           required: true
-          rule: paramCommon
           type: text

@@ -1,0 +1,31 @@
+additionalProperties:
+    formFields:
+        - default: 8080
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+          edit: true
+        - default: ./data
+          envKey: JAR_PATH
+          labelEn: Jar Path
+          labelZh: Jar包路径
+          required: true
+          type: text
+          edit: true
+        - default: jar.jar
+          envKey: JAR_NAME
+          labelEn: Jar Name
+          labelZh: Jar包名称
+          required: true
+          type: text
+          edit: true
+        - default: pro
+          envKey: SPRING_PROFILES_ACTIVE
+          labelEn: Spring Profiles Active
+          labelZh: Spring环境
+          required: true
+          type: text
+          edit: true

@@ -1,0 +1,18 @@
+version: '3'
+services:
+  memos:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    command: ["java", "-jar", "/app/jar.jar", "--spring.profiles.active=${SPRING_PROFILES_ACTIVE}"]
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
+    volumes:
+      - ${JAR_PATH}/${JAR_NAME}:/app/jar.jar
+    image: openjdk:17-jdk-alpine
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true

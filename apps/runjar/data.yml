@@ -1,0 +1,9 @@
+name: RunJar
+tags:
+    - 实用工具
+title: 运行jar包
+type: 实用工具
+description: 运行jar包
+additionalProperties:
+    key: runjar
+    name: RunJar
