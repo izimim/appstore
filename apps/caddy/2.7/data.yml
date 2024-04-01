@@ -1,2 +1,9 @@
 additionalProperties:
     formFields:
+        - default: ./data/Caddyfile
+          envKey: CADDYFILE_PATH
+          labelEn: Caddyfile path
+          labelZh: Caddyfile 路径
+          required: true
+          rule: paramCommon
+          type: text
