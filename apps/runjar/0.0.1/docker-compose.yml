@@ -10,7 +10,7 @@ services:
       - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
     volumes:
       - ${JAR_PATH}/${JAR_NAME}:/app/jar.jar
-    image: openjdk:17-jdk-alpine
+    image: xldevops/jdk17-lts
     labels:
       createdBy: "Apps"
 networks:
