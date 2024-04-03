@@ -7,3 +7,6 @@ description: 运行jar包
 additionalProperties:
     key: runjar
     name: RunJar
+    tags:
+        - Tool
+    shortDescZh: 运行jar包

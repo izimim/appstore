@@ -15,7 +15,7 @@ additionalProperties:
           required: true
           type: text
           edit: true
-        - default: hello.jar
+        - default: jar.jar
           envKey: JAR_NAME
           labelEn: Jar Name
           labelZh: Jar包名称
