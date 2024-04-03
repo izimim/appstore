@@ -15,7 +15,7 @@ additionalProperties:
           required: true
           type: text
           edit: true
-        - default: jar.jar
+        - default: hello.jar
           envKey: JAR_NAME
           labelEn: Jar Name
           labelZh: Jar包名称
@@ -24,8 +24,8 @@ additionalProperties:
           edit: true
         - default: pro
           envKey: SPRING_PROFILES_ACTIVE
-          labelEn: Spring Profiles Active
-          labelZh: Spring环境
+          labelEn: Spring Profile
+          labelZh: 配置文件
           required: true
           type: text
           edit: true
